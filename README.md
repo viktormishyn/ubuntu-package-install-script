@@ -11,6 +11,7 @@ It uses apt and snap package managers and installs next packages:
 * Webstorm,
 * Telegram,
 * Gnome-control-center
+* LibreOffice
 
 ### Usage
 ```bash

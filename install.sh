@@ -6,6 +6,7 @@
 sudo apt update
 sudo apt upgrade
 
+echo ""
 echo "==================================================Git"
 echo ""
 
@@ -18,7 +19,7 @@ else
     sudo apt install git-all
 fi
 
-
+echo ""
 echo "==================================================Chrome"
 echo ""
 
@@ -37,7 +38,7 @@ if ! (dconf read /org/gnome/shell/favorite-apps | grep google-chrome)
 then gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'google-chrome.desktop']"
 fi
     
-
+echo ""
 echo "==================================================PyCharm"
 echo ""
 
@@ -49,7 +50,7 @@ if ! (dconf read /org/gnome/shell/favorite-apps | grep pycharm)
 then gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'pycharm-community_pycharm-community.desktop']"
 fi
 
-
+echo ""
 echo "==================================================WebStorm"
 echo ""
 
@@ -61,7 +62,7 @@ if ! (dconf read /org/gnome/shell/favorite-apps | grep webstorm)
 then gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'webstorm_webstorm.desktop']"
 fi
 
-
+echo ""
 echo "==================================================Telegram"
 echo ""
 
@@ -73,7 +74,7 @@ if ! (dconf read /org/gnome/shell/favorite-apps | grep telegram)
 then gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'telegram-desktop_telegram-desktop.desktop']"
 fi
 
-
+echo ""
 echo "==================================================Gnome-control-center"
 echo ""
 
@@ -86,6 +87,13 @@ else
     sudo apt install gnome-control-center
 fi
 
+echo ""
+echo "==================================================LibreOffice"
+echo ""
+
+sudo snap install libreoffice
+
+echo ""
 echo "=================================================="
 echo ""
 
