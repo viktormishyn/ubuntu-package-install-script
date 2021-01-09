@@ -5,11 +5,12 @@ I usually use this script to automate installation of additional packages on fre
 The script will check if the package is already in the system, hence only the missing packages will be installed.
 
 It uses apt and snap package managers and installs next packages:
-1. Chrome browser,
-2. PyCharm,
-3. Webstorm,
-4. Telegram,
-5. Gnome-control-center
+* Git
+* Chrome browser,
+* PyCharm,
+* Webstorm,
+* Telegram,
+* Gnome-control-center
 
 ### Usage
 ```bash

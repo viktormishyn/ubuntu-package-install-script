@@ -6,11 +6,23 @@
 sudo apt update
 sudo apt upgrade
 
+echo "==================================================Git"
+echo ""
+
+if git --version
+then
+    echo "Git is already installed"
+else
+    echo "Install Git..."
+    echo ""
+    sudo apt install git-all
+fi
+
 
 echo "==================================================Chrome"
 echo ""
 
-if apt list --installed | grep google-chrome
+if google-chrome --version
 then 
     echo "Chrome browser is already installed"
 else
@@ -65,7 +77,7 @@ fi
 echo "==================================================Gnome-control-center"
 echo ""
 
-if apt list --installed | grep google-chrome
+if gnome-control-center --version
 then 
     echo "Gnome-control-center is already installed"
 else
