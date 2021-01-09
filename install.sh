@@ -94,9 +94,23 @@ echo ""
 sudo snap install libreoffice
 
 echo ""
-echo "=================================================="
+echo "==================================================Flameshot"
 echo ""
 
+# command name for shortcut: `flameshot gui`
+
+if flameshot --version
+then
+    echo "Flameshot is already installed"
+else
+    echo "Install Flameshot..."
+    echo ""
+	sudo apt install flameshot
+fi
+
+echo ""
+echo "=================================================="
+echo ""
 
 
 

@@ -12,6 +12,7 @@ It uses apt and snap package managers and installs next packages:
 * Telegram,
 * Gnome-control-center
 * LibreOffice
+* Flameshot
 
 ### Usage
 ```bash
