@@ -13,6 +13,7 @@ It uses apt and snap package managers and installs next packages:
 * Gnome-control-center
 * LibreOffice
 * Flameshot
+* VLC Player
 
 ### Usage
 ```bash
