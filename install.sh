@@ -146,5 +146,17 @@ if ! (dconf read /org/gnome/shell/favorite-apps | grep teams.desktop); then
 fi
 
 echo ""
+echo "==================================================Postman"
+echo ""
+
+echo "Install Postman..."
+echo ""
+sudo snap install postman
+
+if ! (dconf read /org/gnome/shell/favorite-apps | grep postman); then
+    gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'postman_postman.desktop']"
+fi
+
+echo ""
 echo "=================================================="
 echo ""
