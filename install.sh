@@ -134,5 +134,17 @@ echo ""
 sudo snap install node --classic
 
 echo ""
+echo "==================================================Teams"
+echo ""
+
+echo "Install Microsoft Teams..."
+echo ""
+sudo snap install teams
+
+if ! (dconf read /org/gnome/shell/favorite-apps | grep teams.desktop); then
+    gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'teams.desktop']"
+fi
+
+echo ""
 echo "=================================================="
 echo ""
