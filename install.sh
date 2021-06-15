@@ -87,6 +87,8 @@ echo ""
 echo "==================================================LibreOffice"
 echo ""
 
+echo "Install LibreOffice..."
+echo ""
 sudo snap install libreoffice
 
 echo ""
@@ -107,7 +109,29 @@ echo ""
 echo "==================================================VLC Player"
 echo ""
 
+echo "Install VLC Player..."
+echo ""
 sudo snap install vlc
+
+echo ""
+echo "==================================================VSCode"
+echo ""
+
+echo "Install VSCode IDE..."
+echo ""
+sudo snap install code --classic
+
+if ! (dconf read /org/gnome/shell/favorite-apps | grep code_code); then
+    gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'code_code.desktop']"
+fi
+
+echo ""
+echo "==================================================NodeJS"
+echo ""
+
+echo "Install NodeJS..."
+echo ""
+sudo snap install node --classic
 
 echo ""
 echo "=================================================="
