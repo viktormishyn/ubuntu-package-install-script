@@ -97,13 +97,9 @@ echo ""
 
 # command name for shortcut: `flameshot gui`
 
-if flameshot --version; then
-    echo "Flameshot is already installed"
-else
-    echo "Install Flameshot..."
-    echo ""
-    sudo apt install flameshot
-fi
+echo "Install Flameshot..."
+echo ""
+sudo snap install flameshot
 
 echo ""
 echo "==================================================VLC Player"
